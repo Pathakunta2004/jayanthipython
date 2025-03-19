@@ -1,0 +1,157 @@
+
+write a python program to perform arithmetic operators without using user input.
+
+
+a=10
+b=20
+add=a+b
+sub=a-b
+mul=a*b
+div=a/b
+mod=a%b
+fd=a//b
+exp=a**b
+print("addition is :",add)
+print("subtraction is :",sub)
+print("multiplication is :",mul)
+print("division is :",div)
+print("modulo Division is:",mod)
+print("floor division is :",fd)
+print("exponential is :",exp)
+
+output:
+
+addition is : 30
+subtraction is : -10
+multiplication is : 200
+division is : 0.5
+modulo Division is: 10
+floor division is : 0
+exponential is : 100000000000000000000
+
+write a python program to perform arithmatic operators using user input.
+
+
+a=eval(input("enter the first number:"))
+b=eval(input("enter the second number:"))
+sum=a+b
+sub=a-b
+mul=a*b
+div=a/b
+mod=a%b
+fld=a//b
+exp=a**b
+print("Addition is:",sum)
+print("Subtraction is :",sub)
+print("multiplication is :",mul)
+print("Division is :",div)
+print("modulo division is :",mod)
+print("floor division is:",fld)
+print("exponential is:",exp)
+
+
+output:
+
+
+enter the first number:10.5
+enter the second number:35
+Addition is: 45.5
+Subtraction is : -24.5
+multiplication is : 367.5
+Division is : 0.3
+modulo division is : 10.5
+floor division is: 0.0
+exponential is: 5.516015367592248e+35
+
+
+write a python program to perform comparision operators
+
+a=eval(input("Enter the first number :"))
+b=eval(input("enter the second number :"))
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
+print(a==b)
+
+
+OUTPUT:
+
+Enter the first number :35
+enter the second number :56
+True
+False
+True
+False
+False
+
+write a python program to accept two values and perform swapping of two 
+numbers ?
+
+
+a=int(input("enter a value:"))
+b=int(input("enter b value:"))
+a=a+b
+b=a-b
+a=a-b
+print("After swapping two numbers")
+print("===========================")
+print("the value of a after swapping :",a)
+print("the value of b after swapping :",b)
+
+
+OUTPUT:
+
+enter a value:10
+enter b value:20
+After swapping two numbers
+===========================
+the value of a after swapping : 20
+the value of b after swapping : 10
+
+
+write a python program to find the area of triangle ?
+
+
+b=eval(input("enter base of triangle:"))
+h=eval(input("enter hight  of triangle :"))
+Area=1/2*b*h
+print("the area of triangle is:",Area)
+
+OUTPUT:
+
+enter base of triangle:5.6
+enter hight  of triangle :8.1
+the area of triangle is: 22.679999999999996
+
+write a python program to find the area and perimeter of rectangle ?
+
+
+l=eval(input("Enter the length of rectangle:"))
+b=eval(input("Enter the breadth of rectangle :"))
+Area=l*b
+perimeter=2*(l+b)
+print("Area of rectangle :",Area)
+print("perimeter of rectangle :",perimeter)
+
+OUTPUT:
+
+Enter the length of rectangle:20
+Enter the breadth of rectangle :10
+Area of rectangle : 200
+perimeter of rectangle : 60
+
+
+write a python program to find the radius of circle ?
+
+
+diameter=eval(input("enter the diameter of Circle :"))
+radius=diameter/2
+print("the radius of circle is :",radius)
+
+OUTPUT:
+
+enter the diameter of Circle :15
+the radius of circle is : 7.5
+ 
+ 

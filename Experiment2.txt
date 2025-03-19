@@ -1,0 +1,89 @@
+1.write a python program to accept user name and verify whether 
+  it is authorized user or not ?
+
+  authorized_users=['prayodh','siva','moksha','mahi']
+  username=input("enter user name:")
+  if username in authorized_users:
+      print("access granted,welcome",username)
+  else:
+      print("access denied,You are not authorized user")
+
+
+   OUTPUT-1:
+
+   enter user name:siva
+   Access granted,welcome siva
+
+   OUTPUT-2:
+
+   enter user name:yuvan
+   access denied,You are not authorized user
+
+2.Write a python program to accept a year and verify the given 
+  year is leap year or not ?
+ 
+  year=int(input("Enter any year:"))
+  if year%4==0:
+     print("The given year is leap year")
+  else:
+     print("The given year is not a leap year")
+ 
+  OUTPUT-1: 
+  
+  Enter any year:2000
+  The given year is leap year
+ 
+  OUTPUT-2:
+  
+  Enter any year:2077
+  The given year is not a leap year
+
+3.Write a python program to accept a number and verify the given
+  number is in between 1 to 100 ?
+ 
+  num=int(input("Enter any number"))
+  if num in range(1,100):
+     print("The number is within 1 to 100")
+  else:
+     print("The number is not within 1 to 100")
+    
+  OUTPUT:
+  
+  Enter any number: 0
+  The number is not within 1 to 100
+
+4.Write a python program to accept two numbers and find biggest  between
+  two numbers ?
+
+  a=int(input("Enter first number:"))
+  b=int(input("enter second number:"))
+  if a>=b:
+     print("The given number is bigger number")
+  else:
+     print("The given number is smaller ")
+    
+   OUTPUT:
+  
+   Enter first number:2
+   enter second number:27
+   The given number is smaller
+
+5.Write a python program to accept three numbers and find biggest 
+  among three numbers ?
+
+ n1=int(input("Enter first number:"))
+ n2=int(input("Enter second number:"))
+ n3=int(input("Enter third number:"))
+ if n1>n2 and n1>n3:
+    print("n1 is  the biggest number")
+ elif n2>n3:
+    print("n2 is the biggest number")
+ else:
+    print("n3 is the biggest number")
+    
+  OUTPUT:
+  
+  Enter first number:40
+  Enter second number:10
+  Enter third number:50
+  n3 is the biggest number
