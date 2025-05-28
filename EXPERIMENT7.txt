@@ -1,0 +1,99 @@
+        RECURSIVE FUNCTION
+       ====================
+ 
+1.Write a python program to find fibanacci series of numbers using recursive functions?
+
+PROGRAM:
+======= 
+
+def fibanacci(Number):
+  if Number==0:
+      return 0
+  elif Number==1:
+      return 1
+  else:
+      return fibanacci(Number-2)+fibanacci(Number-1)
+Number=int(input("Please Enter the fibanacci Number Range="))
+sum=0
+for Num in range(Number):
+    print(fibanacci(Num),end=' ')
+    sum=sum+fibanacci(Num)
+print("\n The Sum of fibanacci Series Numbers=%d"%sum)    
+    
+OUTPUT:
+======
+Please Enter the fibanacci Number Range=8
+
+0 1 1 2 3 5 8 13 
+
+The Sum of fibanacci Series Numbers=33
+
+
+2.How to find a factorial value of given number using recursive function?
+
+PROGRAM:
+========
+def factorial(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+n=int(input("Enter any number:"))
+print("Factorial value of",n,"is:",factorial(n))
+                
+OUTPUT:
+======
+Enter any number:5
+Factorial value of 5 is: 120
+
+3.Write a python program to the given string is palindrime or not?
+
+PROGRAM:
+=======
+def pal(s):
+    s=s.lower()
+    if len(s)<=1:
+        return True
+    elif s[0]!=s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+myinput=input("Enter  a string:")
+if pal(myinput):
+    print(f" '{myinput}' is a palindrome")
+else:
+    print(f" '{myinput}' is not a palindrome")
+
+OUTPUT:
+======
+Enter  a string:MADAM
+ 'MADAM' is a palindrome
+
+4.Write a python program to find GCD of two numbers using recursive function?
+
+PROGRAM:
+=======
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+x=input("Enter the first integer:")
+y=input("Enter the second integer:")
+if x.isdigit() and y.isdigit():
+    a=int(x)
+    b=int(y)
+    result=gcd(a,b)
+    print(f"The GCD of {a} and {b} is:",result)
+else:
+    print("Please enter valid integers")
+    
+OUTPUT:
+=======
+Enter the first integer:36
+Enter the second integer:18
+The GCD of 36 and 18 is: 18
+
+
