@@ -1,0 +1,142 @@
+1.write a python program to create empty list and store the elements?
+ 
+PROGRAM:
+--------
+mylist=[]
+n=int(input("Enter any number:"))
+for x in range(n):
+    num=int(input("enter a number:"))
+mylist.append(num)
+print("my updated list is :",mylist)
+
+OUTPUT:
+------
+Enter any number:5
+enter a number:10
+enter a number:20
+enter a number:30
+enter a number:40
+enter a number:50
+my updated list is : [10,20,30,40,50]
+
+2.Write a python program to accessing and remove the element from a list?
+
+PROGRAM:
+-------
+l=[10,20,30,"milky",(10+20j),True,1]
+print(l[3])
+print(l[-2])
+print(l[1:4])
+print(l)
+l.remove(30)
+print(l)
+
+OUTPUT:
+------
+milky
+True
+[20, 30, 'milky']
+[10, 20, 30, 'milky', (10+20j), True, 1]
+[10, 20, 'milky', (10+20j), True, 1]
+
+3.Write a python program to find min and max length of a list?
+
+PROGRAM:
+-------
+l=[10,20,30,40,60,True,1]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+
+OUTPUT:
+-------
+7
+[10, 20, 30, 40, 60, True, 1]
+60
+True
+
+4.Write a python program to find sum of the elements in a list ?
+
+PROGRAM:
+--------
+mylist=[8,2,3,0,7]
+sum=0
+for i in mylist:
+    sum=sum+i
+print("The sum is:",sum)
+
+OUTPUT:
+------
+The sum is: 20
+
+5.Write a python program to accept a string and converted into a list ?
+
+PROGRAM:
+--------
+s=input("Enter the string:")
+print(s.split())
+
+OUTPUT:
+------
+Enter the string:python is very easy programming language
+['python', 'is', 'very', 'easy', 'programming', 'language']
+
+6.Write a python program to accept N numbers and store them in list ,then 
+ print the list without odd numbers ?
+
+PROGRAM:
+--------
+n=int(input("Enter the value of n:"))
+mylist=[]
+for i in range(n):
+    num=int(input("enter a number:"))
+mylist.append(num)
+print("Even numbers are:")
+print("[",end=" ")
+for num in mylist:
+    if num%2==0:
+        print(num,end=",")
+print("]")
+
+OUTPUT:
+-------
+Enter the value of n:5
+enter a number:1
+enter a number:3
+enter a number:5
+enter a number:7
+enter a number:9
+Even numbers are:
+[ ]
+
+7.Write a python program to remove specific element,reverse the list,copy the list into 
+  another list?
+
+ PROGRAM:
+---------
+
+list=[10,20,30,"milky",True,0,(10+20j),False,1,True]
+print(list)
+x=list.copy()
+print(x)
+list.pop(3)
+print(list)
+del list[2]
+print(list)
+list.reverse()
+print(list)
+list.clear()
+print(list)
+
+OUTPUT:
+-------
+
+[10, 20, 30, 'milky', True, 0, (10+20j), False, 1, True]
+[10, 20, 30, 'milky', True, 0, (10+20j), False, 1, True]
+[10, 20, 30, True, 0, (10+20j), False, 1, True]
+[10, 20, True, 0, (10+20j), False, 1, True]
+[True, 1, False, (10+20j), 0, True, 20, 10]
+[]
+
+
