@@ -1,0 +1,148 @@
+                       EXCEPTION HANDLING
+                      ==================== 
+
+1.Write a python program for division zero error?
+
+PROGRAM:
+=======
+
+try:
+
+    x=10/0
+
+except Exception as e:
+
+    print("An error occured:",str(e))
+
+OUTPUT:
+=======
+An error occured:divison by zero
+
+2.Write a python program to handle multiple exceptions?
+
+PROGRAM:
+========
+
+try:
+
+    num=int(input("enter a number:"))
+
+    result=10/num
+
+    print("Result:",result)
+
+except ValueError:
+
+    print("Error:invalid input!Please enter a valid number")
+
+except ZeroDivisionError:
+
+    print("Error:Division by zero!")
+
+OUTPUT:
+=======
+
+enter a number:5
+
+Result: 2.0
+
+
+3.Write a pyhthon program to handle multiple exceptions using 
+  else clause?
+
+PROGRAM:
+=======
+
+try:
+
+    num=int(input("Enter a number:"))
+
+    result=10/num
+
+except ValueError:
+
+    print("Error:Invalidinput!Please enter a valid number")
+
+except ZeroDivisionError:
+
+    print("Error:Division by zero!")
+
+else:
+
+    print("Result:",result)
+
+
+OUTPUT:
+=======
+
+Enter a number:2
+
+Result: 5.0
+
+
+
+4.write a python program to perform exceptions with final block?
+
+PROGRAM:
+========
+
+try:
+
+    file=open("myfile.txt","r")
+
+except IOError:
+
+    print("Error:unable to read the file!")
+
+finally:
+
+    file.close()
+
+OUTPUT:
+=======
+
+ERROR!
+
+Error:unable to read the file!
+
+ERROR!
+
+Traceback (most recent call last):
+
+  File "<main.py>", line 6, in <module>
+
+NameError: name 'file' is not defined
+
+
+5.Write a python program to find out the given number is within
+ range or not?
+
+PROGRAM:
+========
+
+try:
+    x=int(input("enter a number upto 100:"))
+
+    if x>100:
+
+        raise ValueError(x)
+
+except ValueError:
+
+    print(x,"is out of allowed range")
+
+else:
+
+    print(x,"is within the allowed range")
+
+OUTPUT:
+=======
+enter a number upto 100:123
+123 is out of allowed range
+
+
+    
+
+
+
+   
