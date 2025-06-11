@@ -1,0 +1,141 @@
+1.write a python program to find random number between 1 to 10 using module?
+
+PROGRAM:
+=======
+import random
+
+random_number=random.randint(1,10)
+
+print("Random Number:",random_number)
+
+OUTPUT:
+=======
+Random Number: 10
+
+2.Write a python program to find date and current time using module?
+
+PROGRAM:
+=======
+
+import datetime
+
+current_datetime=datetime.datetime.now()
+
+print("Current Date and Time :",current_datetime)
+
+OUTPUT:
+======
+Current Date and Time : 2025-06-04 05:21:17.463236
+
+3.write a python program to find the square number using module?
+
+PROGRAM:
+========
+
+import math
+
+number=441
+
+sqrt=math.sqrt(number)
+
+print("Square Root:",sqrt)
+
+OUTPUT:
+======
+Square Root: 21.0
+
+4.Write a python program to find the factorial value using module?
+
+PROGRAM:
+=======
+
+import math
+
+factorial=math.factorial(5)
+
+print("Factorial:",factorial)
+
+OUTPUT:
+======
+Factorial: 120
+
+5.Write a python program to create a file and write some content ,read 
+ the file data ?
+
+PROGRAM:
+=======
+
+file_path="example.txt"
+
+with open(file_path,"w")as file:
+
+    file.write("Hello,world!")
+
+with open(file_path,"r")as file:
+
+    content=fle.read()
+
+    print("File Content:",content)
+
+
+OUTPUT:
+======
+File Content:Hello,world
+
+6.Write a python program to convert lower case into uppercae using module?
+
+PROGRAM:
+=======
+
+import string
+
+txt="hello,world!"
+
+uppercase_txt=txt.upper()
+
+print("Uppercase Text:",uppercase_txt)
+
+OUTPUT:
+======
+Uppercase Text: HELLO,WORLD!
+
+7.Write a python program to generate random number between 1 to 10 using 
+  secret module?
+
+ PROGRAM:
+=========
+
+import secrets
+
+random_number=secrets.randbelow(10)+1
+print("Cryptographycally Secure random Number:",random_number) 
+
+OUTPUT:
+=======
+Cryptographycally Secure random Number: 8
+
+
+8.Write a python program to implement platform module?
+
+PROGRAM:
+=======
+
+import platform
+
+system_name=platform.system()
+
+node_name=platform.node()
+
+processor_name=platform.processor()
+
+print("system Name:",system_name)
+
+print("Node Name:",node_name)
+
+print("processor Name:",processor_name)
+
+OUTPUT:
+======
+A module you have imported isn't available at the moment. It will be available soon.   
+    
+    
